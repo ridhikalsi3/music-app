@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wynk Music</title>
+    <link rel="shortcut icon"
+        href="https://w7.pngwing.com/pngs/410/972/png-transparent-apple-brand-logo-macintosh-apple-icon-format-icon-apple-grey-logo-angle-text-heart-thumbnail.png"
+        type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="design.css">
+    <script src="logic.js" type="module" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="flex justify-content-sb align-items-center">
+            <div class="logo">
+                <img src="data:image/png;base64,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" alt="logo" />
+                <span class="justify-content-sb align-items-center">Wynk Music</span>
+            </div>
+            <div class="search-bar flex">
+                <div class="search-icon flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-search">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg></div>
+                <input type="text" id="myText" value=" " placeholder="Search for Songs">
+                <button id="search">
+                    search
+                </button>
+            </div>
+            <nav>
+                <ul class="flex justify-content-sb align-items-center">
+                    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-square-gantt-chart">
+                                <rect width="18" height="18" x="3" y="3" rx="2" />
+                                <path d="M9 8h7" />
+                                <path d="M8 12h6" />
+                                <path d="M11 16h5" />
+                            </svg>Manage Subscription</a>
+                    </li>
+                    <li><a href="">|</a></li>
+                    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-user-round">
+                                <circle cx="12" cy="8" r="5" />
+                                <path d="M20 21a8 8 0 0 0-16 0" />
+                            </svg>Login</a></li>
+                    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-align-justify">
+                                <line x1="3" x2="21" y1="6" y2="6" />
+                                <line x1="3" x2="21" y1="12" y2="12" />
+                                <line x1="3" x2="21" y1="18" y2="18" />
+                            </svg></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="SubNavBar">
+        <div class="flex justify-content-sb align-items-center">
+            <div>
+                <h6>All</h6>
+            </div>
+            <div>
+                <h6>Trending Now</h6>
+            </div>
+            <div>
+                <h6>Old Songs</h6>
+            </div>
+            <div>
+                <h6>New Songs</h6>
+            </div>
+            <div>
+                <h6>Mood & Genre</h6><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-down">
+                    <path d="m6 9 6 6 6-6" />
+                </svg>
+                </svg>
+            </div>
+            <div>
+                <h6>Top Albums</h6><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-down">
+                    <path d="m6 9 6 6 6-6" />
+                </svg>
+                </svg>
+            </div>
+            <div>
+                <h6>Top Artists</h6>
+            </div>
+            <div>
+                <h6>Top Playlists</h6><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-down">
+                    <path d="m6 9 6 6 6-6" />
+                </svg>
+                </svg>
+            </div>
+            <div>
+                <h6>Podcast</h6>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex">
+            <div class="left-side">
+                <div>
+                    <ul id="search-results"></ul>
+                </div>
+            </div>
+            <div class="right-side">
+                <audio id="music-player" src="" controls></audio>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col-8">
+                <div id="search-results">
+
+                </div>
+            </div>
+            <div class="col-4">
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
